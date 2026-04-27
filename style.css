@@ -14,23 +14,26 @@ body{
 }
 
 .calculator{
-    background: #3a4452;
-    padding: 20px;
+        background: #3a4452;
+    padding: 15px;
     border-radius: 10px;
+    max-width: 320px;
+    width: 100%;
 }
 
 .calculator form input{
    border: 0;
    outline: 0;
-   width: 60px;
+   width: 22%;
    height: 60px;
    border-radius: 10px;
-   box-shadow: -8px -8px 15px rgba(255,255,255,0.5), 5px 5px 15px rgba(0,0,0,0.2);
+   box-shadow: -8px -8px 15px rgba(255,255,255,0.5),
+               5px 5px 15px rgba(0,0,0,0.2);
    background: transparent;
    font-size: 20px;
    color: white;
    cursor: pointer;
-   margin: 10px;
+   margin: 1%;
 }
 
 form .display{
@@ -40,10 +43,10 @@ form .display{
 }
 
 form .display input{
-   text-align: right;
-   font-size: 45px; 
+      text-align: right;
+   font-size: 40px;
+   width: 100%;
    box-shadow: none;
-   flex: 1;
 }
 
 form input.equal{
@@ -56,5 +59,11 @@ form input.operator{
 
 .calculator form input:hover{
     background: rgb(108, 98, 117);
+}
+
+.calculator form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
